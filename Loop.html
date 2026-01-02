@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Use while-loop and print a set of random numbers</h2>
+    <p id="result"></p>
+    <script>
+        var i; //i is undeifined here
+        var text = "";
+        {
+            let i = 0; //assigning i a value of 0 here withing the block
+            while (i < 7) {
+                text += "The values inside the block " + i + "<br>";
+                i++;
+            }
+            document.getElementById("result").innerHTML = text;
+            document.write("The value of i outside the block is: " + i); //i is undeifined here
+        }
+    </script>
+</body>
+
+</html>
